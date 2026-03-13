@@ -1,0 +1,21 @@
+Source: php-neomerx-cors-psr7
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/neomerx/cors-psr7
+Rules-Requires-Root: no
+
+Package: php-neomerx-cors-psr7
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-psr-http-message,
+ php-psr-log
+Description: Framework agnostic PSR-7 CORS implementation
+ Framework agnostic (PSR-7) Cross-Origin Resource Sharing (CORS)
+ implementation following the W3C specification. Provides a CORS
+ analyzer and strategy-based settings.
